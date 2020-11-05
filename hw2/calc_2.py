@@ -12,7 +12,7 @@ result = 'Unknown operator.'
 
 try:
     first_num, second_num = int(first_num), int(second_num)
-except:
+except: # лучше except ValueError:
     print('Введены не числа')
 else:
     if operator == '+':

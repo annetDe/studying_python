@@ -6,9 +6,9 @@
 
 number = int(input())
 
-if number < 10:
+if 1 <= number < 10:
     print(number)
-elif number < 100:
+elif 10 <= number < 100:
     d = number // 10
     u = number % 10
     print(d + u)
@@ -18,7 +18,7 @@ elif number < 100:
         print('возрастание')
     else:
         print('равны')
-else:
+elif 100 <= number < 1000:
     h = number // 100
     d = number % 100 // 10
     u = number % 10
@@ -31,3 +31,5 @@ else:
         print('возрастание')
     else:
         print('в разброс')
+else:
+    print('Введено число вне диапазона 1 - 999')
