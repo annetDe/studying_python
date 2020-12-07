@@ -22,9 +22,7 @@ def main():
     foot_sizes = re.findall(r'\d+', input('Список размеров ног желающих: '))
     w_foot_sizes = [int(i) for i in sorted(foot_sizes)]
     count = 0
-    while True:
-        if not w_foot_sizes or not w_sizes_avail:
-            break
+    while w_foot_sizes and w_sizes_avail:
         if w_foot_sizes[0] <= w_sizes_avail[0]:
             count += 1
             w_foot_sizes.pop(0)
