@@ -65,9 +65,9 @@ def blackjack_game(player):
         game_continue = input('\nContinue Blackjack? (y/n) ')
 
 
-def player_points(list):
-    if sum(list) > 21:
-        for i in range(len(list)):
-            if list[i] == 11:
-                list[i] = 1
-    return sum(list)
+def player_points(lst):
+    if sum(lst) > 21:
+        for i in range(len(lst)):
+            if lst[i] == 11:
+                lst[i] = 1
+    return sum(lst)
